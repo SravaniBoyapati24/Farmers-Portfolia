@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Farmers-Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Farmers-Portfolio">
+	<link href="style1.css" rel="stylesheet">
+  </head>
+<body>
+<header>
+ <div class="container">
+    <div class="img">
+       <img src="img5.jpg" alt="farmer" height="115px" style="border-radius:140px";>
+    </div>
+   <div class='info'>
+     <h1 class='farm'>Farmers-Portfolio</h1>
+   </div>
+  </div>
+  </header>
+ <div id="nav">
+      <ul>
+	     <li><a href='#'>Maincrops</a></li>
+		 <li><a href='#'>Home</a></li>
+	  </ul>
+ </div>
+ <div class="par">
+  <h1><center>HISTORY</center></h1>
+ The Indian farmer had discovered and begun farming many spices and sugarcane more than 2500 years ago. Did you know that our country is the 2nd largest producer of agricultural products in the world? In fact, agriculture contributes as much as 6.1% (as of 2017) to our Gross Domestic Product (GDP). Let us find out about the different methods adopted by an Indian farmer and how it helps him grow all the variety of crops that we consume and export.
+<b>Agricultural Methods of the Indian Farmer</b>
+Farming is one of the oldest economic activity of our country. Different regions have different methods of farming. However, all these methods have significantly evolved over the years with changes in weather and climatic conditions, technological innovations and socio-cultural practices. Farming methods prevalent in India can be classified as follows
+<b>Primitive Subsistence Farming</b></br>
+<b>Indian Farmer</b>
+This is a primitive farming method and farmers still practice it in some parts of the country. While this type of subsistence farming is typically done on small areas of land, it also uses indigenous tools like a hoe, Dao, digging sticks etc. Usually, a family or the local community of Indian farmers are engaged in this farming method who use the output for their own consumption. This is the most natural method, where the growth of crops but dependent on the rain, heat, fertility of the soil and other environmental conditions.
+ </div>
+<div id='Content'>
+     <img class='myimg' src='img11.jpg' alt='image' style="width:100%";/>
+	 <img class='myimg' src='img1.jpg' alt='image' style="width:100%";/>
+	 <img class='myimg' src='img2.jpg' alt='image'  style="width:100%";/>
+	 <img class='myimg' src='img3.jpg' alt='image'  style="width:100%";/>
+	 <img class='myimg' src='img4.jpg' alt='image' style="width:100%";/>
+	 <img class='myimg' src='img5.jpg' alt='image'  style="width:100%";/>
+	 <img class='myimg' src='img6.jpg' alt='image' style="width:100%";/>
+	  <div class="leftside" onclick="plusDivs(-1)">&#10094;</div>
+	 <div class="rightside" onclick="plusDivs(1)">&#10095;</div>
+	 <div>
+	   <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+     </div>
+ </div>
+<div style="clear:both"></div>
+<div id="main">
+ <aside>
+  <h1><center>ABOUT</center></h1>
+  <p>Different names of this farming method are:
+   In this farming method, the Indian farmer uses a high amount of fertilizers, pesticides, and insecticides to enhance and maintain the growth of 
+   <b>*‘Bewar’ or ‘Dahiya’ in Madhya Pradesh</b></br>
+   <b>*‘Podu’ oin the Western Ghats</b></br>
+   <b>*‘Valre’ or ‘Waltre’ in South-eastern Rajasthan</b></br>
+   <b>*‘Kuruwa’ in Jharkhand and</b></br>
+   <b>*‘Khil’ in the Himalayan region</b></br>
+   <b>*‘Bewar’ or ‘Dahiya’ in Madhya Pradesh</b></br>
+   <b>*‘Podu’ oin the Western Ghats</b></br>
+   <b>*‘Valre’ or ‘Waltre’ in South-eastern Rajasthan</b></br>
+   <b>*‘Kuruwa’ in Jharkhand and</b></br>
+   <b>*‘Khil’ in the Himalayan region</b></br>
+   <img src='img13.jpg' alt='crop' width="100%;" height="165px;";>
+</p>
+  </aside>
+ <div id='right'>
+ <h1><center>Problems of Farmers</center></h1>
+ <p>
+   <b>1. Soil erosion:</b><br>
+     Large tracts of fertile land suffer from soil erosion by wind and water.The seemingly abundance of net sown area of 141.2 million hectares and total cropped area of 189.7 million hectares (1999-2000) pales into insignificance when we see that it is divided into economically unviable small and scattered holdings. This area must be properly treated and restored to its original fertility.</br>
+   <b>2. Seeds:</b></br>
+     Seed is a critical and basic input for attaining higher crop yields and sustained growth in agricultural production.The main reason for this sad state of affairs is our inheritance laws. The land belonging to the father is equally distributed among his sons. This distribution of land does not entail a collection or consolidated one, but its nature is fragmented.</br>
+   <b>3. Manures, Fertilizers and Biocides:</b></br>
+       Indian soils have been used for growing crops over thousands of years without caring much for replenishing.Pests, germs and weeds cause heavy loss to crops which amounted to about one third of the total field produce at the time of Independence. Biocides (pesticides, herbicides and weedicides) are used to save the crops and to avoid losses. </br>
+   <b>4. Scarcity of capital:</b></br>
+       Agriculture is an important industry and like all other industries it also requires capital. 
+	   The role of capital input is becoming more and more important with the advancement of farm technology. </br>
+   <b>5.Agricultural Marketing:</b></br>
+     The role of capital input is becoming more and more important with the advancement of farm technology.</br> 
+ </p>
+ </div>
+ </div>
+ <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("myimg");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+ </body>
+</html>
